@@ -377,9 +377,6 @@ static int bpf_obj_name_cpy(char *dst, const char *src)
 	if (src == end)
 		return -EINVAL;
 
-	/* '\0' terminates dst */
-	*dst = 0;
-
 	return 0;
 }
 
